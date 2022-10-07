@@ -1,0 +1,144 @@
+{
+  // prettier
+  "prettier.endOfLine": "crlf",
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 140,
+
+  // formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "dart.lineLength": 140,
+
+  // fonts
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+
+  // change the default terminal cursor from a rectangle to a line
+  "terminal.integrated.cursorStyle": "line",
+
+  // set the default terminal
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // change file icons and basically all other icons in vscode
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "icons-carbon",
+
+  // spaces behave like tabs when selected (you can't select only one space)
+  "editor.stickyTabStops": true,
+
+  // default formatters
+  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+  "[python]": { "editor.defaultFormatter": "ms-python.python" },
+  "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
+
+  // default editors
+  "workbench.editorAssociations": { "*.db": "sqlite-viewer.option" },
+
+  // don't display two folders inside one of each other as one in the explroer
+  "explorer.compactFolders": false,
+
+  // make the minimap at the right side of the screen look better
+  "editor.minimap.renderCharacters": false,
+
+  // vscode theme
+  "workbench.colorTheme": "Atom One Dark",
+
+  // set the default markdown formatter and don't color bracket pairs
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.bracketPairColorization.enabled": false
+  },
+
+  // turn off telemetry
+  "telemetry.telemetryLevel": "off",
+
+  // lighten up comments and remove italics from them
+  "editor.tokenColorCustomizations": {
+    "[Atom One Dark]": {
+      "comments": "#73848C",
+      "textMateRules": [
+        {
+          "scope": "comment",
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+
+  // https://stackoverflow.com/q/32911977
+  "editor.acceptSuggestionOnCommitCharacter": false,
+
+  // hide node_modules in the explorer
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true
+  },
+
+  // change the default folder color from gray to blue
+  "material-icon-theme.folders.color": "#42a5f5",
+
+  // hide the menu bar at the top
+  "window.menuBarVisibility": "hidden",
+
+  // smooth stuff
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+
+  // don't show the "pick a language" text when openeing a new untitled file
+  "workbench.editor.untitled.hint": "hidden",
+
+  // wrap editor tabs when there are too many of them
+  "workbench.editor.wrapTabs": true,
+
+  // hide layout icons at the top right
+  "workbench.layoutControl.enabled": false,
+
+  // actually open the file when single-clicking opening a file from the explorer
+  "workbench.editor.enablePreview": false,
+
+  // uncategorized
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "git.autofetch": true,
+  "color-highlight.languages": ["javascript"],
+  "color-highlight.markerType": "dot-before",
+  "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
+  "window.enableMenuBarMnemonics": false,
+  "terminal.integrated.confirmOnExit": "hasChildProcesses",
+  "svelte.enable-ts-plugin": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.maxTokenizationLineLength": 100000,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "security.workspace.trust.enabled": false,
+  "python.defaultInterpreterPath": "C:\\Users\\Inspiron\\AppData\\Local\\python.exe",
+  "json.format.keepLines": true,
+  "dart.flutterSdkPath": "C:\\Flutter",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "dart.flutterCreateOrganization": "com.vojta",
+  "deno.suggest.completeFunctionCalls": true,
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "material-icon-theme.activeIconPack": "none"
+
+  // "editor.quickSuggestions": { "strings": true }
+  // "debug.toolBarLocation": "docked",
+  // "pdf-preview.default.scale": "page-actual",
+  // "css.validate": false,
+  // "gitlens.hovers.currentLine.enabled": false,
+  // "gitlens.advanced.messages": { "suppressLineUncommittedWarning": true }
+}
