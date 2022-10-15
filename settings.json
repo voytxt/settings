@@ -1,6 +1,6 @@
 {
   // prettier
-  "prettier.endOfLine": "crlf",
+  "prettier.endOfLine": "lf",
   "prettier.singleQuote": true,
   "prettier.printWidth": 140,
 
@@ -35,9 +35,6 @@
   "[python]": { "editor.defaultFormatter": "ms-python.python" },
   "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
 
-  // default editors
-  "workbench.editorAssociations": { "*.db": "sqlite-viewer.option" },
-
   // don't display two folders inside one of each other as one in the explroer
   "explorer.compactFolders": false,
 
@@ -71,19 +68,12 @@
     }
   },
 
+  // color highlight
+  "color-highlight.languages": ["javascript"],
+  "color-highlight.markerType": "dot-before",
+
   // https://stackoverflow.com/q/32911977
   "editor.acceptSuggestionOnCommitCharacter": false,
-
-  // hide node_modules in the explorer
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/node_modules": true
-  },
 
   // change the default folder color from gray to blue
   "material-icon-theme.folders.color": "#42a5f5",
@@ -109,31 +99,29 @@
   // actually open the file when single-clicking opening a file from the explorer
   "workbench.editor.enablePreview": false,
 
+  // increase tokenization length from 20k to 100k
+  "editor.maxTokenizationLineLength": 100000,
+
+  // disable workspace trust
+  "security.workspace.trust.enabled": false,
+
   // uncategorized
   "editor.formatOnSave": true,
-  "editor.suggestSelection": "first",
   "git.autofetch": true,
-  "color-highlight.languages": ["javascript"],
-  "color-highlight.markerType": "dot-before",
   "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
   "window.enableMenuBarMnemonics": false,
-  "terminal.integrated.confirmOnExit": "hasChildProcesses",
   "svelte.enable-ts-plugin": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.maxTokenizationLineLength": 100000,
   "diffEditor.ignoreTrimWhitespace": false,
-  "security.workspace.trust.enabled": false,
   "python.defaultInterpreterPath": "C:\\Users\\Inspiron\\AppData\\Local\\python.exe",
   "json.format.keepLines": true,
   "dart.flutterSdkPath": "C:\\Flutter",
-  "editor.unicodeHighlight.invisibleCharacters": false,
-  "editor.unicodeHighlight.ambiguousCharacters": false,
   "dart.flutterCreateOrganization": "com.vojta",
   "deno.suggest.completeFunctionCalls": true,
   "svelte.plugin.svelte.note-new-transformation": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
-  "material-icon-theme.activeIconPack": "none"
+  "material-icon-theme.activeIconPack": "none",
+  "eslint.packageManager": "pnpm"
 
   // "editor.quickSuggestions": { "strings": true }
   // "debug.toolBarLocation": "docked",
@@ -141,4 +129,18 @@
   // "css.validate": false,
   // "gitlens.hovers.currentLine.enabled": false,
   // "gitlens.advanced.messages": { "suppressLineUncommittedWarning": true }
+
+  // hide node_modules in the explorer
+  // "files.exclude": {
+  //   "**/.git": true,
+  //   "**/.svn": true,
+  //   "**/.hg": true,
+  //   "**/CVS": true,
+  //   "**/.DS_Store": true,
+  //   "**/Thumbs.db": true,
+  //   "**/node_modules": true
+  // },
+
+  // "editor.unicodeHighlight.invisibleCharacters": false,
+  // "editor.unicodeHighlight.ambiguousCharacters": false,
 }
