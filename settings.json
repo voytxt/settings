@@ -1,15 +1,16 @@
 {
   // prettier
   "prettier.endOfLine": "lf",
-  "prettier.singleQuote": true,
   "prettier.printWidth": 140,
+  "prettier.singleQuote": true,
 
   // formatting
+  "dart.lineLength": 140,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
+  "files.eol": "\n",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "dart.lineLength": 140,
 
   // fonts
   "editor.fontFamily": "Fira Code",
@@ -17,13 +18,12 @@
   "editor.fontSize": 16,
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
 
-  // change the default terminal cursor from a rectangle to a line
+  // change the default terminal profile and cursor
   "terminal.integrated.cursorStyle": "line",
-
-  // set the default terminal
   "terminal.integrated.defaultProfile.windows": "Git Bash",
 
-  // change file icons and basically all other icons in vscode
+  // change theme
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "icons-carbon",
 
@@ -32,45 +32,31 @@
 
   // default formatters
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
-  "[python]": { "editor.defaultFormatter": "ms-python.python" },
   "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
 
-  // don't display two folders inside one of each other as one in the explroer
+  // don't display two folders inside one of each other as one in the explorer
   "explorer.compactFolders": false,
 
   // make the minimap at the right side of the screen look better
   "editor.minimap.renderCharacters": false,
 
-  // vscode theme
-  "workbench.colorTheme": "Atom One Dark",
-
   // set the default markdown formatter and don't color bracket pairs
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    // "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.bracketPairColorization.enabled": false
   },
 
   // turn off telemetry
   "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
 
-  // lighten up comments and remove italics from them
+  // lighten up and remove italics from comments
   "editor.tokenColorCustomizations": {
     "[Atom One Dark]": {
       "comments": "#73848C",
-      "textMateRules": [
-        {
-          "scope": "comment",
-          "settings": {
-            "fontStyle": ""
-          }
-        }
-      ]
+      "textMateRules": [{ "scope": "comment", "settings": { "fontStyle": "" } }]
     }
   },
-
-  // color highlight
-  "color-highlight.languages": ["javascript"],
-  "color-highlight.markerType": "dot-before",
 
   // https://stackoverflow.com/q/32911977
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -96,7 +82,7 @@
   // hide layout icons at the top right
   "workbench.layoutControl.enabled": false,
 
-  // actually open the file when single-clicking opening a file from the explorer
+  // actually open the file when single-clicking a file in the explorer
   "workbench.editor.enablePreview": false,
 
   // increase tokenization length from 20k to 100k
@@ -108,25 +94,27 @@
   // uncategorized
   "editor.formatOnSave": true,
   "git.autofetch": true,
-  "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
   "window.enableMenuBarMnemonics": false,
   "svelte.enable-ts-plugin": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "python.defaultInterpreterPath": "C:\\Users\\Inspiron\\AppData\\Local\\python.exe",
   "json.format.keepLines": true,
   "dart.flutterSdkPath": "C:\\Flutter",
   "dart.flutterCreateOrganization": "com.vojta",
   "deno.suggest.completeFunctionCalls": true,
   "svelte.plugin.svelte.note-new-transformation": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "material-icon-theme.activeIconPack": "none",
-  "eslint.packageManager": "pnpm"
+  "eslint.packageManager": "pnpm",
+  "editor.quickSuggestionsDelay": 0,
+  "eslint.alwaysShowStatus": true
 
+  // "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
   // "editor.quickSuggestions": { "strings": true }
-  // "debug.toolBarLocation": "docked",
-  // "pdf-preview.default.scale": "page-actual",
   // "css.validate": false,
+  // "python.defaultInterpreterPath": "C:\\Users\\Inspiron\\AppData\\Local\\python.exe",
+
+  // gitlens
+  // "gitlens.codeLens.authors.enabled": false,
+  // "gitlens.codeLens.recentChange.enabled": false,
   // "gitlens.hovers.currentLine.enabled": false,
   // "gitlens.advanced.messages": { "suppressLineUncommittedWarning": true }
 
