@@ -88,8 +88,7 @@
 
   // format and organize imports on save
   "editor.formatOnSave": true,
-  // currently disabled, since vscode 1.73 broke this - https://github.com/microsoft/vscode/issues/165326
-  // "editor.codeActionsOnSave": { "source.organizeImports": true },
+  "editor.codeActionsOnSave": { "source.organizeImports": true },
 
   // uncategorized
   "git.autofetch": true,
