@@ -24,7 +24,7 @@
 
   // theme
   "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "symbols",
   "workbench.productIconTheme": "icons-carbon",
 
   // spaces behave like tabs when selected (you can't select only one space)
@@ -40,9 +40,6 @@
   // better minimap at the right side of the screen
   "editor.minimap.renderCharacters": false,
 
-  // don't color bracket pairs in markdown files
-  "[markdown]": { "editor.bracketPairColorization.enabled": false },
-
   // turn off telemetry
   "telemetry.telemetryLevel": "off",
   "redhat.telemetry.enabled": false,
@@ -57,9 +54,6 @@
 
   // https://stackoverflow.com/q/32911977
   "editor.acceptSuggestionOnCommitCharacter": false,
-
-  // change the default folder color from gray to blue
-  "material-icon-theme.folders.color": "#42a5f5",
 
   // hide stuff at the top
   "window.menuBarVisibility": "hidden",
@@ -90,6 +84,14 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": { "source.organizeImports": true },
 
+  // turn off all deno inlay hints
+  "deno.inlayHints.parameterNames.enabled": "none",
+  "deno.inlayHints.enumMemberValues.enabled": false,
+  "deno.inlayHints.functionLikeReturnTypes.enabled": false,
+  "deno.inlayHints.parameterTypes.enabled": false,
+  "deno.inlayHints.propertyDeclarationTypes.enabled": false,
+  "deno.inlayHints.variableTypes.enabled": false,
+
   // uncategorized
   "git.autofetch": true,
   "window.enableMenuBarMnemonics": false,
@@ -100,14 +102,16 @@
   "dart.flutterCreateOrganization": "com.vojta",
   "deno.suggest.completeFunctionCalls": true,
   "svelte.plugin.svelte.note-new-transformation": false,
-  "material-icon-theme.activeIconPack": "none",
-  "eslint.packageManager": "pnpm",
   "editor.quickSuggestionsDelay": 0,
-  "eslint.alwaysShowStatus": true,
   "html.autoClosingTags": false,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
-  "typescript.preferences.includePackageJsonAutoImports": "on"
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "editor.bracketPairColorization.enabled": false,
+  "[ahk]": { "editor.fontLigatures": false }
+
+  // "eslint.packageManager": "pnpm",
+  // "eslint.alwaysShowStatus": true
 
   // "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
   // "editor.quickSuggestions": { "strings": true }
