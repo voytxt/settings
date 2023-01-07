@@ -1,0 +1,21 @@
+# https://starship.rs/config/
+
+"$schema" = "https://starship.rs/config-schema.json"
+
+[battery]
+disabled = true
+
+[character]
+format = "[❯](purple) "
+
+[cmd_duration]
+format = "| [$duration]($style) "
+
+[git_branch]
+ignore_branches = ["main"]
+
+[git_status]
+disabled = true
+
+[package]
+disabled = true
