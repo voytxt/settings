@@ -6,33 +6,34 @@
 
   // formatting
   "dart.lineLength": 140,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "files.eol": "\n",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
+
+  // default formatters
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+  "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
 
   // fonts
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "[ahk]": { "editor.fontLigatures": false },
 
   // change the default terminal profile and cursor
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
 
-  // theme
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "symbols",
-  "workbench.productIconTheme": "icons-carbon",
+  // theme(s)
+  "workbench.colorTheme": "Atom One Dark", // https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark
+  "workbench.iconTheme": "symbols", // https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols
+  "workbench.productIconTheme": "icons-carbon", // https://marketplace.visualstudio.com/items?itemName=antfu.icons-carbon
 
   // spaces behave like tabs when selected (you can't select only one space)
   "editor.stickyTabStops": true,
-
-  // default formatters
-  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
-  "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
 
   // don't display two folders inside one of each other as one in the explorer
   "explorer.compactFolders": false,
@@ -46,10 +47,8 @@
 
   // lighten up and remove italics from comments
   "editor.tokenColorCustomizations": {
-    "[Atom One Dark]": {
-      "comments": "#73848C",
-      "textMateRules": [{ "scope": "comment", "settings": { "fontStyle": "" } }]
-    }
+    "comments": "#73848C",
+    "textMateRules": [{ "scope": "comment", "settings": { "fontStyle": "" } }]
   },
 
   // https://stackoverflow.com/q/32911977
@@ -60,10 +59,10 @@
   "workbench.layoutControl.enabled": false,
 
   // smooth stuff
-  "workbench.list.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": true,
+  "workbench.list.smoothScrolling": true,
 
   // don't show the "pick a language" text when openeing a new untitled file
   "workbench.editor.untitled.hint": "hidden",
@@ -85,56 +84,32 @@
   "editor.codeActionsOnSave": { "source.organizeImports": true },
 
   // turn off all deno inlay hints
-  "deno.inlayHints.parameterNames.enabled": "none",
   "deno.inlayHints.enumMemberValues.enabled": false,
   "deno.inlayHints.functionLikeReturnTypes.enabled": false,
+  "deno.inlayHints.parameterNames.enabled": "none",
   "deno.inlayHints.parameterTypes.enabled": false,
   "deno.inlayHints.propertyDeclarationTypes.enabled": false,
   "deno.inlayHints.variableTypes.enabled": false,
 
-  // uncategorized
-  "git.autofetch": true,
-  "window.enableMenuBarMnemonics": false,
-  "svelte.enable-ts-plugin": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "json.format.keepLines": true,
-  "dart.flutterSdkPath": "C:\\Flutter",
-  "dart.flutterCreateOrganization": "com.vojta",
-  "deno.suggest.completeFunctionCalls": true,
-  "svelte.plugin.svelte.note-new-transformation": false,
+  // disable colored brackets
+  "editor.bracketPairColorization.enabled": false,
+
+  // wtf wouldn't it be 0 by default
   "editor.quickSuggestionsDelay": 0,
+
+  // enable typescript for svelte
+  "svelte.enable-ts-plugin": true,
+
+  // uncategorized
+  "dart.flutterCreateOrganization": "com.vojta",
+  "dart.flutterSdkPath": "C:\\Flutter",
+  "deno.suggest.completeFunctionCalls": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.autofetch": true,
   "html.autoClosingTags": false,
+  "json.format.keepLines": true,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.includePackageJsonAutoImports": "on",
-  "editor.bracketPairColorization.enabled": false,
-  "[ahk]": { "editor.fontLigatures": false }
-
-  // "eslint.packageManager": "pnpm",
-  // "eslint.alwaysShowStatus": true
-
-  // "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
-  // "editor.quickSuggestions": { "strings": true }
-  // "css.validate": false,
-  // "python.defaultInterpreterPath": "C:\\Users\\Inspiron\\AppData\\Local\\python.exe",
-
-  // gitlens
-  // "gitlens.codeLens.authors.enabled": false,
-  // "gitlens.codeLens.recentChange.enabled": false,
-  // "gitlens.hovers.currentLine.enabled": false,
-  // "gitlens.advanced.messages": { "suppressLineUncommittedWarning": true }
-
-  // hide node_modules in the explorer
-  // "files.exclude": {
-  //   "**/.git": true,
-  //   "**/.svn": true,
-  //   "**/.hg": true,
-  //   "**/CVS": true,
-  //   "**/.DS_Store": true,
-  //   "**/Thumbs.db": true,
-  //   "**/node_modules": true
-  // },
-
-  // "editor.unicodeHighlight.invisibleCharacters": false,
-  // "editor.unicodeHighlight.ambiguousCharacters": false,
+  "window.enableMenuBarMnemonics": false
 }
