@@ -5,13 +5,16 @@
   "launchMode": "maximized",
   "windowingBehavior": "useAnyExisting",
 
-  "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
   "profiles": {
-    "defaults": { "colorScheme": "VS Code", "tabColor": "#282C34" },
+    "defaults": {
+      "colorScheme": "VS Code",
+      "font": { "face": "CaskaydiaCove Nerd Font Mono" }
+    },
 
     "list": [
-      { "name": "Git Bash", "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}", "font": { "face": "CaskaydiaCove Nerd Font Mono" } },
       { "name": "PowerShell", "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" },
+      { "name": "Git Bash", "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}" },
       { "name": "Command Prompt", "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}" }
     ]
   },
@@ -43,27 +46,27 @@
     {
       "name": "VS Code",
 
-      "foreground": "#CCCCCC",
-      "background": "#282C34",
-      "cursorColor": "#528BFF",
+      "foreground": "#cccccc",
+      "background": "#282c34",
+      "cursorColor": "#528bff",
 
       "black": "#000000",
-      "red": "#CD3131",
-      "green": "#0DBC79",
-      "yellow": "#E5E510",
-      "blue": "#2472C8",
-      "purple": "#BC3FBC",
-      "cyan": "#11A8CD",
-      "white": "#E5E5E5",
+      "red": "#cd3131",
+      "green": "#0dbc79",
+      "yellow": "#e5e510",
+      "blue": "#2472c8",
+      "purple": "#bc3fbc",
+      "cyan": "#11a8cd",
+      "white": "#e5e5e5",
 
       "brightBlack": "#666666",
-      "brightRed": "#F14C4C",
-      "brightGreen": "#23D18B",
-      "brightYellow": "#F5F543",
-      "brightBlue": "#3B8EEA",
-      "brightPurple": "#D670D6",
-      "brightCyan": "#29B8DB",
-      "brightWhite": "#E5E5E5"
+      "brightRed": "#f14c4c",
+      "brightGreen": "#23d18b",
+      "brightYellow": "#f5f543",
+      "brightBlue": "#3b8eea",
+      "brightPurple": "#d670d6",
+      "brightCyan": "#29b8db",
+      "brightWhite": "#e5e5e5"
     }
   ]
 }
