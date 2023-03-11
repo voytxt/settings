@@ -17,5 +17,8 @@ ignore_branches = ["main"]
 [git_status]
 disabled = true
 
+[nodejs]
+detect_extensions = ["js"]
+
 [package]
 disabled = true
