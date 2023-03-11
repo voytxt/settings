@@ -1,0 +1,11 @@
+{
+  // https://aka.ms/winget-settings
+  "$schema": "https://aka.ms/winget-settings.schema.json",
+
+  // https://github.com/microsoft/winget-cli/issues/1860
+  "network": { "downloader": "wininet" },
+
+  "visual": { "progressBar": "rainbow" },
+
+  "experimentalFeatures": { "pinning": true }
+}
