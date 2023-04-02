@@ -1,8 +1,8 @@
 {
-  // prettier
-  "prettier.endOfLine": "lf",
-  "prettier.printWidth": 140,
-  "prettier.singleQuote": true,
+  // fonts
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
 
   // formatting
   "dart.lineLength": 140,
@@ -10,40 +10,33 @@
   "files.eol": "\n",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
+  "prettier.printWidth": 140,
+  "prettier.singleQuote": true,
 
-  // default formatters
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
-  "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
+  // formatters
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" }, // https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode
+  "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" }, // https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
 
-  // fonts
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-  "[ahk]": { "editor.fontLigatures": false },
-
-  // change the default terminal profile and cursor
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-
-  // theme(s)
+  // themes
   "workbench.colorTheme": "Atom One Dark", // https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark
   "workbench.iconTheme": "symbols", // https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols
   "workbench.productIconTheme": "icons-carbon", // https://marketplace.visualstudio.com/items?itemName=antfu.icons-carbon
 
-  // spaces behave like tabs when selected (you can't select only one space)
-  "editor.stickyTabStops": true,
+  // smooth stuff
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
 
-  // don't display two folders inside one of each other as one in the explorer
-  "explorer.compactFolders": false,
+  // hide unnecessary buttons at the top
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "hidden",
+  "workbench.layoutControl.enabled": false,
 
-  // better minimap at the right side of the screen
-  "editor.minimap.renderCharacters": false,
-
-  // turn off telemetry
-  "telemetry.telemetryLevel": "off",
-  "redhat.telemetry.enabled": false,
+  // format and organize imports on save
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.organizeImports": true },
 
   // lighten up and remove italics from comments
   "editor.tokenColorCustomizations": {
@@ -54,62 +47,26 @@
   // https://stackoverflow.com/q/32911977
   "editor.acceptSuggestionOnCommitCharacter": false,
 
-  // hide stuff at the top
-  "window.menuBarVisibility": "hidden",
-  "workbench.layoutControl.enabled": false,
-
-  // smooth stuff
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-  "workbench.list.smoothScrolling": true,
-
-  // don't show the "pick a language" text when openeing a new untitled file
-  "workbench.editor.untitled.hint": "hidden",
-
-  // wrap editor tabs when there are too many of them
-  "workbench.editor.wrapTabs": true,
-
-  // actually open the file when single-clicking a file in the explorer
-  "workbench.editor.enablePreview": false,
-
-  // increase tokenization length from 20k to 100k
-  "editor.maxTokenizationLineLength": 100000,
-
-  // disable workspace trust
-  "security.workspace.trust.enabled": false,
-
-  // format and organize imports on save
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": { "source.organizeImports": true },
-
-  // turn off all deno inlay hints
-  "deno.inlayHints.enumMemberValues.enabled": false,
-  "deno.inlayHints.functionLikeReturnTypes.enabled": false,
-  "deno.inlayHints.parameterNames.enabled": "none",
-  "deno.inlayHints.parameterTypes.enabled": false,
-  "deno.inlayHints.propertyDeclarationTypes.enabled": false,
-  "deno.inlayHints.variableTypes.enabled": false,
-
-  // disable colored brackets
-  "editor.bracketPairColorization.enabled": false,
-
-  // wtf wouldn't it be 0 by default
-  "editor.quickSuggestionsDelay": 0,
-
-  // enable typescript for svelte
-  "svelte.enable-ts-plugin": true,
+  // rename html tags without using f2
+  "editor.linkedEditing": true,
 
   // uncategorized
   "dart.flutterCreateOrganization": "com.vojta",
-  "dart.flutterSdkPath": "C:\\Flutter",
-  "deno.suggest.completeFunctionCalls": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.maxTokenizationLineLength": 100000,
+  "editor.minimap.enabled": false,
+  "editor.stickyTabStops": true,
   "git.autofetch": true,
-  "html.autoClosingTags": false,
   "json.format.keepLines": true,
+  "security.workspace.trust.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.cursorStyle": "line",
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.includePackageJsonAutoImports": "on",
-  "window.enableMenuBarMnemonics": false
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none"
 }
