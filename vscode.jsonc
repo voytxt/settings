@@ -1,72 +1,68 @@
 {
-  // fonts
-  "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 16,
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-
-  // formatting
-  "dart.lineLength": 140,
-  "editor.tabSize": 2,
-  "files.eol": "\n",
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "prettier.printWidth": 140,
-  "prettier.singleQuote": true,
-
-  // formatters
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" }, // https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode
-  "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" }, // https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
-
-  // themes
-  "workbench.colorTheme": "Atom One Dark", // https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark
-  "workbench.iconTheme": "symbols", // https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols
-  "workbench.productIconTheme": "icons-carbon", // https://marketplace.visualstudio.com/items?itemName=antfu.icons-carbon
-
-  // smooth stuff
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-  "workbench.list.smoothScrolling": true,
-
-  // hide unnecessary buttons at the top
-  "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "hidden",
-  "workbench.layoutControl.enabled": false,
-
-  // format and organize imports on save
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": { "source.organizeImports": true },
-
-  // lighten up and remove italics from comments
-  "editor.tokenColorCustomizations": {
-    "comments": "#73848C",
-    "textMateRules": [{ "scope": "comment", "settings": { "fontStyle": "" } }]
-  },
-
-  // https://stackoverflow.com/q/32911977
-  "editor.acceptSuggestionOnCommitCharacter": false,
-
-  // rename html tags without using f2
-  "editor.linkedEditing": true,
-
-  // uncategorized
-  "dart.flutterCreateOrganization": "com.vojta",
+  // editor
+  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnCommitCharacter": false, // https://stackoverflow.com/q/32911977
   "editor.bracketPairColorization.enabled": false,
-  "editor.inlayHints.enabled": "off",
+  "editor.codeActionsOnSave": { "source.organizeImports": true },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": "'zero', 'ss19', 'cv07', 'cv08', 'cv11', 'cv14'", // https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features
+  "editor.fontSize": 22,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.linkedEditing": true,
   "editor.maxTokenizationLineLength": 100000,
   "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
   "editor.stickyTabStops": true,
-  "git.autofetch": true,
-  "json.format.keepLines": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.eol": "\n",
   "security.workspace.trust.enabled": false,
-  "svelte.enable-ts-plugin": true,
-  "telemetry.telemetryLevel": "off",
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "hidden",
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.editor.enablePreview": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredDarkColorTheme": "Palenight Theme",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.startupEditor": "none",
+
+  // formatters
+  "[gdscript]": { "editor.defaultFormatter": "Razoric.gdscript-toolkit-formatter" },
+  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+  "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "icons-carbon",
+
+  // terminal
+  "terminal.external.windowsExec": "wt",
   "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.smoothScrolling": true,
+
+  // javascript / typescript
+  "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.includePackageJsonAutoImports": "on",
-  "workbench.editor.enablePreview": false,
-  "workbench.startupEditor": "none"
+  "typescript.preferences.quoteStyle": "single",
+
+  // other
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  "svelte.enable-ts-plugin": true,
+  "telemetry.telemetryLevel": "off",
+
+  // https://code.visualstudio.com/updates/v1_78#_diff-algorithm-improvements
+  "diffEditor.diffAlgorithm": "advanced",
+
+  // unorganized
+  "typst-lsp.exportPdf": "never",
+  "symbols.hidesExplorerArrows": false
 }
