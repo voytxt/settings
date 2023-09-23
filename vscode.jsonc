@@ -6,23 +6,23 @@
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": { "source.organizeImports": true },
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": "'zero', 'ss19', 'cv07', 'cv08', 'cv11', 'cv14'", // https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features
-  "editor.fontSize": 22,
+  "editor.fontFamily": "SF Mono",
+  "editor.fontSize": 20,
+  "editor.fontWeight": "bold",
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "on",
-  "editor.linkedEditing": true,
   "editor.maxTokenizationLineLength": 100000,
   "editor.minimap.enabled": false,
   "editor.smoothScrolling": true,
   "editor.stickyTabStops": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
+  "explorer.compactFolders": false,
   "files.eol": "\n",
   "security.workspace.trust.enabled": false,
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
-  "workbench.colorTheme": "Default Light Modern",
+  "workbench.colorTheme": "Palenight Theme",
   "workbench.editor.enablePreview": false,
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
@@ -34,6 +34,7 @@
   "[gdscript]": { "editor.defaultFormatter": "Razoric.gdscript-toolkit-formatter" },
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
+  "[typst]": { "editor.defaultFormatter": "nvarner.typst-lsp" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
@@ -44,11 +45,11 @@
   "terminal.external.windowsExec": "wt",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.fontSize": 18,
   "terminal.integrated.smoothScrolling": true,
 
   // javascript / typescript
   "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.includePackageJsonAutoImports": "on",
   "typescript.preferences.quoteStyle": "single",
@@ -60,9 +61,26 @@
   "telemetry.telemetryLevel": "off",
 
   // https://code.visualstudio.com/updates/v1_78#_diff-algorithm-improvements
-  "diffEditor.diffAlgorithm": "advanced",
+  // https://code.visualstudio.com/updates/v1_80#_new-diff-editor
+  // https://code.visualstudio.com/updates/v1_81#_diff-editor
+  "diffEditor.experimental.showMoves": true,
+
+  // https://code.visualstudio.com/updates/v1_81#_asynchronous-tokenization-rollout
+  "editor.experimental.asyncTokenization": true,
 
   // unorganized
-  "typst-lsp.exportPdf": "never",
-  "symbols.hidesExplorerArrows": false
+  "typst-lsp.exportPdf": "onSave",
+  "editor.cursorBlinking": "smooth",
+  "workbench.tree.indent": 12,
+  "html.autoClosingTags": false,
+  "catppuccin.accentColor": "sapphire",
+  "catppuccin.italicKeywords": false,
+  "catppuccin.workbenchMode": "minimal",
+  "errorLens.followCursor": "activeLine",
+  "errorLens.gutterIconsEnabled": true,
+  "window.commandCenter": false,
+  "window.title": "${dirty}${rootName}",
+  // "typst-lsp.experimentalFormatterMode": "on",
+  "window.autoDetectColorScheme": true,
+  "symbols.hidesExplorerArrows": true
 }
