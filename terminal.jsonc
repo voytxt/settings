@@ -4,14 +4,20 @@
 
   "launchMode": "maximized",
   "windowingBehavior": "useAnyExisting",
+  "theme": "system",
 
   "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
   "profiles": {
     "defaults": {
-      "colorScheme": "VS Code",
-      "font": { "face": "CaskaydiaCove Nerd Font Mono" }
+      "colorScheme": {
+        "dark": "VS Code",
+        "light": "Catppuccin Latte"
+      },
+      "font": {
+        "face": "CaskaydiaCove Nerd Font",
+        "size": 16.0
+      }
     },
-
     "list": [
       { "name": "PowerShell", "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" },
       { "name": "Git Bash", "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}" },
@@ -27,23 +33,13 @@
     { "keys": "ctrl+c", "command": "copy" },
     { "keys": "ctrl+v", "command": "paste" },
 
-    { "keys": "ctrl+1", "command": { "action": "switchToTab", "index": 0 } },
-    { "keys": "ctrl+2", "command": { "action": "switchToTab", "index": 1 } },
-    { "keys": "ctrl+3", "command": { "action": "switchToTab", "index": 2 } },
-    { "keys": "ctrl+4", "command": { "action": "switchToTab", "index": 3 } },
-    { "keys": "ctrl+5", "command": { "action": "switchToTab", "index": 4 } },
-
-    { "keys": "ctrl+alt+1", "command": { "action": "newTab", "index": 0 } },
-    { "keys": "ctrl+alt+2", "command": { "action": "newTab", "index": 1 } },
-    { "keys": "ctrl+alt+3", "command": { "action": "newTab", "index": 2 } },
-
     { "keys": "ctrl+e", "command": { "action": "sendInput", "input": "explorer .\r" } },
     { "keys": "ctrl+up", "command": { "action": "sendInput", "input": "cd ..\r" } }
   ],
 
-  // generated with https://github.com/blake-mealey/vscode-generate-wt-scheme
   "schemes": [
     {
+      // generated with https://github.com/blake-mealey/vscode-generate-wt-scheme
       "name": "VS Code",
 
       "foreground": "#cccccc",
@@ -67,6 +63,30 @@
       "brightPurple": "#d670d6",
       "brightCyan": "#29b8db",
       "brightWhite": "#e5e5e5"
+    },
+    {
+      "name": "Catppuccin Latte",
+
+      "background": "#EFF1F5",
+      "black": "#5C5F77",
+      "blue": "#1E66F5",
+      "brightBlack": "#6C6F85",
+      "brightBlue": "#1E66F5",
+      "brightCyan": "#179299",
+      "brightGreen": "#40A02B",
+      "brightPurple": "#EA76CB",
+      "brightRed": "#D20F39",
+      "brightWhite": "#BCC0CC",
+      "brightYellow": "#DF8E1D",
+      "cursorColor": "#DC8A78",
+      "cyan": "#179299",
+      "foreground": "#4C4F69",
+      "green": "#40A02B",
+      "purple": "#EA76CB",
+      "red": "#D20F39",
+      "selectionBackground": "#ACB0BE",
+      "white": "#ACB0BE",
+      "yellow": "#DF8E1D"
     }
   ]
 }
