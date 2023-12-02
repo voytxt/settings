@@ -5,9 +5,10 @@
   "editor.acceptSuggestionOnCommitCharacter": false, // https://stackoverflow.com/q/32911977
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": { "source.organizeImports": true },
+  "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "SF Mono",
-  "editor.fontSize": 20,
+  "editor.fontSize": 18,
   "editor.fontWeight": "bold",
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "on",
@@ -20,26 +21,29 @@
   "explorer.compactFolders": false,
   "files.eol": "\n",
   "security.workspace.trust.enabled": false,
+  "window.commandCenter": false,
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
-  "workbench.colorTheme": "Palenight Theme",
+  "window.title": "${dirty}${rootName}",
   "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "symbols",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.preferredDarkColorTheme": "Palenight Theme",
   "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "none",
+  "workbench.tree.indent": 12,
 
   // formatters
   "[gdscript]": { "editor.defaultFormatter": "Razoric.gdscript-toolkit-formatter" },
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
   "[typst]": { "editor.defaultFormatter": "nvarner.typst-lsp" },
+  "[xml]": { "editor.defaultFormatter": "redhat.vscode-xml" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
-  "workbench.iconTheme": "symbols",
-  "workbench.productIconTheme": "icons-carbon",
 
   // terminal
   "terminal.external.windowsExec": "wt",
@@ -57,6 +61,7 @@
   // other
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "never",
+  "html.autoClosingTags": false,
   "svelte.enable-ts-plugin": true,
   "telemetry.telemetryLevel": "off",
 
@@ -68,19 +73,18 @@
   // https://code.visualstudio.com/updates/v1_81#_asynchronous-tokenization-rollout
   "editor.experimental.asyncTokenization": true,
 
+  // "catppuccin.accentColor": "sapphire",
+  // "catppuccin.italicKeywords": false,
+  // "catppuccin.workbenchMode": "minimal",
+
+  // "typst-lsp.experimentalFormatterMode": "on",
+
   // unorganized
-  "typst-lsp.exportPdf": "onSave",
-  "editor.cursorBlinking": "smooth",
-  "workbench.tree.indent": 12,
-  "html.autoClosingTags": false,
-  "catppuccin.accentColor": "sapphire",
-  "catppuccin.italicKeywords": false,
-  "catppuccin.workbenchMode": "minimal",
   "errorLens.followCursor": "activeLine",
   "errorLens.gutterIconsEnabled": true,
-  "window.commandCenter": false,
-  "window.title": "${dirty}${rootName}",
-  // "typst-lsp.experimentalFormatterMode": "on",
   "window.autoDetectColorScheme": true,
-  "symbols.hidesExplorerArrows": true
+  "files.associations": { "*.css": "css" },
+  "deno.enable": false,
+  "symbols.hidesExplorerArrows": false,
+  "workbench.colorTheme": "Default Light Modern"
 }
