@@ -1,42 +1,46 @@
 {
   // editor
-  "breadcrumbs.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "breadcrumbs.symbolPath": "off",
   "editor.acceptSuggestionOnCommitCharacter": false, // https://stackoverflow.com/q/32911977
   "editor.bracketPairColorization.enabled": false,
-  "editor.codeActionsOnSave": { "source.organizeImports": true },
+  "editor.codeActionsOnSave": { "source.organizeImports": "explicit" },
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "SF Mono",
+  "editor.fontFamily": "Cartograph CF",
   "editor.fontSize": 18,
-  "editor.fontWeight": "bold",
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "on",
   "editor.maxTokenizationLineLength": 100000,
   "editor.minimap.enabled": false,
   "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
   "editor.stickyTabStops": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "explorer.compactFolders": false,
   "files.eol": "\n",
   "security.workspace.trust.enabled": false,
+  "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
   "window.title": "${dirty}${rootName}",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "symbols",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Palenight Theme",
-  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Nord Light",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": true,
   "workbench.tree.indent": 12,
 
   // formatters
   "[gdscript]": { "editor.defaultFormatter": "Razoric.gdscript-toolkit-formatter" },
+  "[java]": { "editor.defaultFormatter": "redhat.java" },
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
   "[typst]": { "editor.defaultFormatter": "nvarner.typst-lsp" },
@@ -56,35 +60,32 @@
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
   "typescript.preferences.quoteStyle": "single",
 
   // other
+  // "catppuccin.accentColor": "sapphire",
+  "catppuccin.italicKeywords": false,
+  "catppuccin.workbenchMode": "minimal",
+  "errorLens.followCursor": "activeLine",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.replaceLinebreaksSymbol": ". ",
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "never",
   "html.autoClosingTags": false,
   "svelte.enable-ts-plugin": true,
   "telemetry.telemetryLevel": "off",
 
-  // https://code.visualstudio.com/updates/v1_78#_diff-algorithm-improvements
-  // https://code.visualstudio.com/updates/v1_80#_new-diff-editor
-  // https://code.visualstudio.com/updates/v1_81#_diff-editor
-  "diffEditor.experimental.showMoves": true,
-
   // https://code.visualstudio.com/updates/v1_81#_asynchronous-tokenization-rollout
   "editor.experimental.asyncTokenization": true,
 
-  // "catppuccin.accentColor": "sapphire",
-  // "catppuccin.italicKeywords": false,
-  // "catppuccin.workbenchMode": "minimal",
+  // https://code.visualstudio.com/updates/v1_82#_moved-code-detection
+  "diffEditor.experimental.showMoves": true,
 
   // "typst-lsp.experimentalFormatterMode": "on",
 
   // unorganized
-  "errorLens.followCursor": "activeLine",
-  "errorLens.gutterIconsEnabled": true,
-  "window.autoDetectColorScheme": true,
-  "files.associations": { "*.css": "css" },
-  "deno.enable": false,
-  "symbols.hidesExplorerArrows": false,
-  "workbench.colorTheme": "Default Light Modern"
+  // "files.associations": { "*.css": "css" },
+  "java.inlayHints.parameterNames.enabled": "none",
+  "symbols.hidesExplorerArrows": false
 }
