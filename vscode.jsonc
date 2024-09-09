@@ -6,55 +6,50 @@
   "editor.codeActionsOnSave": { "source.organizeImports": "explicit" },
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Cartograph CF",
-  "editor.fontSize": 18,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "on",
+  // "editor.lightbulb.enabled": "off",
   "editor.maxTokenizationLineLength": 100000,
   "editor.minimap.enabled": false,
+  "editor.selectionClipboard": false, // enable middle click drag to select
   "editor.smoothScrolling": true,
-  "editor.stickyScroll.enabled": true,
   "editor.stickyTabStops": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "explorer.compactFolders": false,
   "files.eol": "\n",
   "security.workspace.trust.enabled": false,
+  "telemetry.telemetryLevel": "off",
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
+  "window.customTitleBarVisibility": "auto",
+  "window.dialogStyle": "custom",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
   "window.title": "${dirty}${rootName}",
+  "window.titleBarStyle": "custom",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Default Light Modern",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "symbols",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "workbench.preferredLightColorTheme": "Nord Light",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": true,
   "workbench.tree.indent": 12,
 
   // formatters
-  "[gdscript]": { "editor.defaultFormatter": "Razoric.gdscript-toolkit-formatter" },
-  "[java]": { "editor.defaultFormatter": "redhat.java" },
-  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+  "[rust]": { "editor.defaultFormatter": "rust-lang.rust-analyzer" },
   "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" },
-  "[typst]": { "editor.defaultFormatter": "nvarner.typst-lsp" },
+  "[typst]": { "editor.defaultFormatter": "myriad-dreamin.tinymist", "editor.formatOnSave": false },
   "[xml]": { "editor.defaultFormatter": "redhat.vscode-xml" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.printWidth": 120,
+  "prettier.printWidth": 100,
   "prettier.singleQuote": true,
-
-  // terminal
-  "terminal.external.windowsExec": "wt",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-  "terminal.integrated.fontSize": 18,
-  "terminal.integrated.smoothScrolling": true,
 
   // javascript / typescript
   "javascript.preferences.quoteStyle": "single",
@@ -64,28 +59,19 @@
   "typescript.preferences.quoteStyle": "single",
 
   // other
-  // "catppuccin.accentColor": "sapphire",
-  "catppuccin.italicKeywords": false,
-  "catppuccin.workbenchMode": "minimal",
-  "errorLens.followCursor": "activeLine",
+  "diffEditor.experimental.showMoves": true, // https://code.visualstudio.com/updates/v1_82#_moved-code-detection
+  "errorLens.followCursor": "allLines",
   "errorLens.gutterIconsEnabled": true,
   "errorLens.replaceLinebreaksSymbol": ". ",
+  "eslint.validate": ["javascript", "typescript", "svelte"],
+  "files.associations": { "*.css": "css" },
   "git.autofetch": true,
+  "git.inputValidation": true,
   "git.openRepositoryInParentFolders": "never",
   "html.autoClosingTags": false,
+  "rust-analyzer.check.command": "clippy",
   "svelte.enable-ts-plugin": true,
-  "telemetry.telemetryLevel": "off",
-
-  // https://code.visualstudio.com/updates/v1_81#_asynchronous-tokenization-rollout
-  "editor.experimental.asyncTokenization": true,
-
-  // https://code.visualstudio.com/updates/v1_82#_moved-code-detection
-  "diffEditor.experimental.showMoves": true,
-
-  // "typst-lsp.experimentalFormatterMode": "on",
-
-  // unorganized
-  // "files.associations": { "*.css": "css" },
-  "java.inlayHints.parameterNames.enabled": "none",
-  "symbols.hidesExplorerArrows": false
+  "symbols.hidesExplorerArrows": false,
+  "tinymist.formatterMode": "typstyle",
+  "vue.server.hybridMode": true // nuxt is weird, typescript works only if this is set to anything but "auto"
 }
