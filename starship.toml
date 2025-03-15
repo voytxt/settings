@@ -2,11 +2,8 @@
 
 "$schema" = "https://starship.rs/config-schema.json"
 
-[battery]
-disabled = true
-
 [character]
-format = "[❯](purple) "
+format = "[🐱](purple) "
 
 [cmd_duration]
 format = "| [$duration]($style) "
@@ -18,7 +15,4 @@ ignore_branches = ["main"]
 disabled = true
 
 [nodejs]
-detect_extensions = ["js"]
-
-[package]
-disabled = true
+symbol = "[⬢](bold green) "
